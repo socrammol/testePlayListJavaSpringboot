@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "a365acf1-93c8-4c38-806c-6e858e67a76f",
+		"name": "playListTeste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cria Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"marcos ferreira\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuario/criar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salva musica",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"jose\",\r\n    \"artista\":\"legiao urbana\",\r\n    \"album\":\"legiao urbana\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/musica/criar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"musica",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cria playlist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"id\": \"4\",\r\n        \"nome\": \"marcos ferreira\"\r\n    },\r\n    \"musicas\":[\r\n         {\r\n            \"id\": \"5\",\r\n            \"nome\": \"alice\",\r\n            \"artista\": \"legiao urbana\",\r\n            \"album\": \"legiao urbana\"\r\n        },{\r\n            \"id\": \"6\",\r\n            \"nome\": \"jose\",\r\n            \"artista\": \"legiao urbana\",\r\n            \"album\": \"legiao urbana\"\r\n        }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/playlist/criar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"playlist",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add musica playList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPlayList\":\"\",\r\n    \"idMusica\":\"\",\r\n    \"nome\":\"\",\r\n    \"artista\":\"\",\r\n    \"album\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/playlist/criar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"playlist",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove Item PlayList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPlayList\":\"\",\r\n    \"idMusica\":\"\",\r\n    \"nome\":\"\",\r\n    \"artista\":\"\",\r\n    \"album\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/playlist/criar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"playlist",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ver musicas playList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/playlist/vermusicaplay/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"playlist",
+						"vermusicaplay",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ver playList Usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/playlist/verplay/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"playlist",
+						"verplay",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
